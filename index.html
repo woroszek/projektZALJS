@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">×</span>
+        <p class="modalP">Wprowadź poprawione dane:</p>
+        <div id="FormContainer" class="FormContainer">
+          <form name="modalForm" id="modalForm">
+            <input
+              type="text"
+              id="modalName"
+              name="modalName"
+              placeholder="Nazwa"
+            />
+            <input
+              type="text"
+              id="modalValue"
+              name="modalValue"
+              placeholder="Kwota"
+            />
+          </form>
+          <button id="modalBtn" class="modalBtn">Zmień</button>
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="headContainer">
+        <span class="balanceFullValue">
+        <h1 class="balanceTitle" id="balanceTitle">Bilans wynosi: </h1>
+        <h1 class="balanceValue" id="balanceValue"> 0</h1>
+      </span>
+      </div>
+    <div id="contentContainer" class="contentContainer">
+      <div id="incomeContainer" class="incomeContainer">
+        <div id="topIncome" class="topIncome">
+          <h2 id="formTitle" class="formTitle">Przychody</h1>
+          <div class="incomeFormDiv" class="incomeFormDiv">
+            <form name="incomeForm" id="form">
+              <input
+                type="text"
+                id="incomeName"
+                class="incomeName"
+                name="incomeName"
+                placeholder="Nazwa przychodu"
+              />
+              <input
+                type="number"
+                id="incomeValue"
+                class="incomeValue"
+                name="incomeValue"
+                placeholder="Kwota"
+              />
+            </form>
+            <button id="AddValue" class="AddValue">Dodaj</button>
+          </div>
+        </div>
+        <div id="bottomIncome" class="bottomIncome">
+          <ul id="incomeList" class="incomeList"></ul>
+        </div>
+        <div class="valueIncomePar">
+          <p id="incomeParagraph" class="incomeParagraph">Suma przychodów:</p>
+          <p id="incomeSum" class="incomeSum">0</p>
+        </div>
+      </div>
+      <div id="spendingContainer" class="spendingContainer">
+        <div id="topSpending " class="topSpending">
+          <h2 id="formTitle" class="formTitle">Wydatki</h1>
+          <div class="spendingFormDiv" class="spendingFormDiv">
+            <form name="spendingForm" id="form">
+              <input
+                type="text"
+                id="spendingName"
+                class="spendingName"
+                name="spendingName"
+                placeholder="Nazwa wydatku"
+              />
+              <input
+                type="number"
+                id="spendingValue"
+                class="spendingValue"
+                name="spendingValue"
+                placeholder="Kwota"
+              />
+            </form>
+            <button id="AddSpending" class="AddSpending">Dodaj</button>
+          </div>
+        </div>
+        <div id="bottomSpending" class="bottomSpending">
+          <ul id="spendingList" class="spendingList"></ul>
+        </div>
+        <div class="valueSpendingPar" class="valueSpendingPar">
+          <p id="spendingParagraph" class="spendingParagraph">Suma wydatków:</p>
+          <p id="spendingSum" class="spendingSum">0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
